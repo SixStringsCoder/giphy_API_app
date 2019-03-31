@@ -14,24 +14,6 @@ export default class App extends Component {
     }
   }
 
-  // componentDidMount() {
-  //   fetch('https://api.giphy.com/v1/gifs/trending?api_key=szl6VYCm8RNBR4II8d3xu8zbD6NeRwQK&limit=25&rating=G')
-  //     .then(response => response.json())
-  //     .then(responseData => this.setState({ gifs: responseData.data}, console.log(responseData)))
-  //     .catch(error => {
-  //       console.log("YO! Something's really, really wrong here!", error);
-  //     })
-  // }
-
-  // componentDidMount() {
-  //   axios.get('https://api.giphy.com/v1/gifs/random?api_key=szl6VYCm8RNBR4II8d3xu8zbD6NeRwQK&limit=24&rating=R')
-  //   .then(response => this.setState({ gifs: response.data.data}, console.log(response)))
-  //   .catch(error => {
-  //     console.log("YO! Something's really, really wrong here!", error);
-  //   })
-  //   .then(() => console.log("Put extra code here that always executes!"));
-  // }
-
   componentDidMount() {
     this.searchGiphy();
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class SearchForm extends Component {
+class SearchForm extends Component {
 
   state = {
     searchText: '',
@@ -28,7 +28,7 @@ export default class SearchForm extends Component {
   }
 
   render() {
-    console.log(this.state.isStickers, this.state.searchType);
+    const { isStickers } = this.state;
     return (
       <form className="search-form" onSubmit={this.handleSubmit} >
         <div id="switchArea">
@@ -36,11 +36,12 @@ export default class SearchForm extends Component {
             <input type="checkbox" onChange={this.handleWhichSearch} />
             <span className="slider round"></span>
           </label>
-          <h5 className="autoWord">{this.state.isStickers ? "STICKERS" : "GIFS"}</h5>
+          <h5 className="autoWord">{isStickers ? "STICKERS" : "GIFS"}</h5>
         </div>
 
         <label className="is-hidden" htmlFor="search">Search</label>
         <input type="search"
+               id="searchfield"
                onChange={this.onSearchChange}
                name="search"
                placeholder="Search..." />
@@ -51,3 +52,5 @@ export default class SearchForm extends Component {
     );
   }
 }
+
+export default SearchForm;

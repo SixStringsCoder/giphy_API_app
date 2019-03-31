@@ -29,9 +29,8 @@ li {
 input {
   font-size: 1.12em;
   height: 46px;
-  padding-bottom: 1em;
-  padding-left: 0;
-  background: none;
+  padding: 1em;
+  background: #eee;
   border: none;
   outline: 0;
   border-bottom: 4px solid #e4e4e4;
@@ -69,11 +68,12 @@ button {
   width: 100%;
   margin-right: -40px;
   padding-right: 35px;
+  margin-bottom: 10px;
 }
 
 .search-button {
   float: right;
-  margin-right: -10px;
+  margin: 5px 0px;
 }
 
 .icn-search {
@@ -83,12 +83,12 @@ button {
 .icon-gif {
   font-size: 6em;
   margin-bottom: 0;
-  color: #7bcbc4;
+  color: red;
   display: block;
 }
 
 .no-gifs  {
-  color: #7bcbc4;
+  color: red;
   height: 140px;
   padding-top: 62px;
   text-align: center;
@@ -107,7 +107,7 @@ button {
 }
 
 .gif-wrap img {
-  min-width: 100%;
+  width: 90vw;
 }
 
 /* =================================

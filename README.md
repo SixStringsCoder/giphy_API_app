@@ -1,5 +1,4 @@
 # Gotta Gif It
-##### Project from Treehouse's [Data Fetching in React](https://teamtreehouse.com/library/data-fetching-in-react) by Guil Hernandez
 
 #### Introduction
 
@@ -46,14 +45,13 @@ If you have Yarn installed run:
 
 This project was built using *Create React App*.  For complete technical details click [Create React App](./docs/README.md)
 
-
-
+<hr>
 ##### Technical Components
 - CSS Grid, Flexbox and Media Queries used to build the _responsive features_.
 - JavaScript (ECMASript 6)
 - React 16.5.2
-
-
+- Axois for
+<hr>
 ##### Articles and Tutorials
 
 Tutorials, articles and docs used while building this app.
@@ -61,17 +59,18 @@ Tutorials, articles and docs used while building this app.
 - [Data Fetching in React](https://teamtreehouse.com/library/data-fetching-in-react) by Guil Hernandez
 - [w3schools toggle switch](https://www.w3schools.com/howto/howto_css_switch.asp)
 
+<hr>
 #### Picture of Data and Components Breakdown
 ![breakdown]()
 
 #### Pictures of UI
 ##### Phone
 
-![phone view]()
+![phone view](./screenshots/phone.jpg)
 
 
 ##### Tablet
-![tablet view]()
+![tablet view](./screenshots/tablet.png)
 
 
 ##### Desktop
