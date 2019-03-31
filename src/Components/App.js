@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import { Provider } from './Context';
 import axios from 'axios';
 import './App.css';
-import SearchForm from './Components/SearchForm';
-import GifList from './Components/GifList';
+import SearchForm from './SearchForm';
+import GifList from './GifList';
 
-export default class App extends Component {
-
+class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -33,25 +33,28 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state.gifs);
     return (
-      <div>
-        <div className="main-header">
-          <div className="inner">
-            <h1 className="main-title">GOTTA GIF IT</h1>
-            <SearchForm onSearch={this.searchGiphy} />
+      <Provider>
+        <div>
+          <div className="main-header">
+            <div className="inner">
+              <h1 className="main-title">GOTTA GIF IT</h1>
+              <SearchForm onSearch={this.searchGiphy} />
+            </div>
+          </div>
+          <div className="main-content">
+            {
+              this.state.isLoading
+              ?
+              <h2>LOADING...</h2>
+              :
+              <GifList arrayOfGifs={this.state.gifs} />
+            }
           </div>
         </div>
-        <div className="main-content">
-          {
-            this.state.isLoading
-            ?
-            <h2>LOADING...</h2>
-            :
-            <GifList arrayOfGifs={this.state.gifs} />
-          }
-        </div>
-      </div>
+      </Provider>
     );
   }
 }
+
+export default App;

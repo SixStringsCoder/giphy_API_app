@@ -17,7 +17,7 @@ The **Search** interface has a search input at top which is used to retrieve sea
 
 ![desktop view](./screenshots/stickers_selected.png)
 
-![error screen is no results are returned](./screenshots/no_results.png)
+![error screen is no results are returned](./screenshots/noGIF_screen.png)
 
 
 
