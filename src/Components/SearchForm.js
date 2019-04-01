@@ -46,7 +46,7 @@ class SearchForm extends Component {
                name="search"
                placeholder="Search..." />
         <button type="submit" id="submit" className="search-button">
-          <i className="material-icons icn-search">search</i>
+          <i className="material-icons icon-search">search</i>
         </button>
       </form>
     );

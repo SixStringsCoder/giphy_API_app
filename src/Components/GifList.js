@@ -1,22 +1,27 @@
 import React from 'react';
+import { Consumer } from './Context';
 import Gif from './Gif';
 import NoGifs from './NoGifs';
 
-const GifList = props => {
+const GifList = () => {
+  return (
+    <Consumer>
+      { context => {
+        let gifs;
 
-  let gifs;
+        context.length > 0
+        ?
+        gifs = context.map( gif => <Gif gif={gif} key={gif.id} /> )
+        :
+        gifs = <NoGifs />
 
-  props.arrayOfGifs.length > 0
-  ?
-  gifs = props.arrayOfGifs.map( gif => <Gif gif={gif} key={gif.id} /> )
-  :
-  gifs = <NoGifs />
-
-
-  return(
-    <ul className="gif-list">
-      { gifs }
-    </ul>
+        return (
+          <ul className="gif-list">
+            { gifs }
+          </ul>
+        )
+      }}
+    </Consumer>
   );
 }
 

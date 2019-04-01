@@ -33,8 +33,9 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.gifs);
     return (
-      <Provider>
+      <Provider value={this.state.gifs}>
         <div>
           <div className="main-header">
             <div className="inner">
