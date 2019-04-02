@@ -9,7 +9,7 @@
 body {
   font: 1em/1.5 'Roboto', sans-serif;
   color: #4c4c4c;
-  background: #f6f7f7;
+  background: #FF9800;
   padding-top: 145px;
   padding-bottom: 3em;
   margin: 0;
@@ -21,7 +21,7 @@ a {
 
 ul,
 li {
-  margin: 0;
+  margin: 40px 0 0 0;
   padding: 0;
   list-style: none;
 }
@@ -57,11 +57,13 @@ button {
 ==================================== */
 
 .main-title {
-  font-size: 1.4em;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px gray;
   line-height: 80px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 20px 0 0;
 }
 
 .search-form input:only-of-type {
@@ -126,7 +128,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: #8bc34a; /* Light Green */
   min-height: 80px;
   z-index: 1000;
 }
@@ -241,6 +243,12 @@ input:checked + .slider:before {
     margin: 20px 0 0;
     font-size: 0;
   }
+  ul {
+    margin: 80px 0 0 0;
+  }
+  .main-title {
+    text-align: center;
+  }
 }
 
 @media (min-width: 550px) {
@@ -261,6 +269,12 @@ input:checked + .slider:before {
     padding: 0;
     overflow: hidden;
     font-size: 0;
+  }
+  ul {
+    margin: 100px 0 0 0;
+  }
+  .main-title {
+    text-align: center;
   }
 }
 

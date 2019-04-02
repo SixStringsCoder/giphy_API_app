@@ -6,19 +6,16 @@ import SearchForm from './SearchForm';
 import GifList from './GifList';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
+  state = {
       gifs: [],
       isLoading: true
-    }
   }
 
   componentDidMount() {
     this.searchGiphy();
   }
 
-  searchGiphy = (searchType="gifs", searchTerm="blueberries") => {
+  searchGiphy = (searchType="gifs", searchTerm="blueberrie") => {
     const url = 'https://api.giphy.com/v1/';
     const searchKey = 'search?api_key=szl6VYCm8RNBR4II8d3xu8zbD6NeRwQK&';
 
@@ -37,7 +34,6 @@ class App extends Component {
     return (
       <Provider value={{
         gifs: this.state.gifs,
-        onSearch: this.searchGiphy
       }}>
         <div>
           <div className="main-header">

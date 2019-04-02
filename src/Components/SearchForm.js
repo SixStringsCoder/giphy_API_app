@@ -8,6 +8,7 @@ class SearchForm extends Component {
     searchType: 'gifs'
   }
 
+  // Load Stickers of GIFs
   handleWhichSearch = e => {
     this.setState( prevState => {
       return {
@@ -24,7 +25,6 @@ class SearchForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.onSearch(this.state.searchType, this.state.searchText);
-    // e.currentTarget.reset();
   }
 
   render() {
