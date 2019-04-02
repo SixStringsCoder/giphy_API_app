@@ -7,11 +7,12 @@ const GifList = () => {
   return (
     <Consumer>
       { context => {
+        console.log(context);
         let gifs;
 
-        context.length > 0
+        context.gifs.length > 0
         ?
-        gifs = context.map( gif => <Gif gif={gif} key={gif.id} /> )
+        gifs = context.gifs.map( gif => <Gif gif={gif} key={gif.id} /> )
         :
         gifs = <NoGifs />
 

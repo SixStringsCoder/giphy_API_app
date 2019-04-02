@@ -18,7 +18,7 @@ class App extends Component {
     this.searchGiphy();
   }
 
-  searchGiphy = (searchType="gifs", searchTerm="sharks") => {
+  searchGiphy = (searchType="gifs", searchTerm="blueberries") => {
     const url = 'https://api.giphy.com/v1/';
     const searchKey = 'search?api_key=szl6VYCm8RNBR4II8d3xu8zbD6NeRwQK&';
 
@@ -35,7 +35,10 @@ class App extends Component {
   render() {
     console.log(this.state.gifs);
     return (
-      <Provider value={this.state.gifs}>
+      <Provider value={{
+        gifs: this.state.gifs,
+        onSearch: this.searchGiphy
+      }}>
         <div>
           <div className="main-header">
             <div className="inner">
@@ -49,7 +52,7 @@ class App extends Component {
               ?
               <h2>LOADING...</h2>
               :
-              <GifList arrayOfGifs={this.state.gifs} />
+              <GifList />
             }
           </div>
         </div>
