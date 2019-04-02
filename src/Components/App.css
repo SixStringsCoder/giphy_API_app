@@ -85,16 +85,19 @@ button {
 .icon-gif {
   font-size: 6em;
   margin-bottom: 0;
-  color: red;
+  color: white;
   display: block;
 }
 
-.no-gifs  {
+.no-gifs {
   color: red;
   height: 140px;
   padding-top: 62px;
   text-align: center;
   font-size: 1.25em;
+}
+.no-gifs h3 {
+  color: black;
 }
 
 .gif-list a {
@@ -241,7 +244,6 @@ input:checked + .slider:before {
   .gif-list li {
     text-align: center;
     margin: 20px 0 0;
-    font-size: 0;
   }
   ul {
     margin: 80px 0 0 0;

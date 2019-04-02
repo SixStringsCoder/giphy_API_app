@@ -6,9 +6,9 @@
 
 by Steve Hanlon
 
-*Gotta Gif It* is a web app that displays animated GIFs and GIF Stickers supplied by [Giphy.com's API](https://developers.giphy.com/)
+*Gotta Gif It* is a web app that displays animated GIFs and GIF Stickers supplied by [Giphy.com's API](https://developers.giphy.com/).
 
-![desktop view](./screenshots/gifs_selected.png)
+![desktop view](./screenshots/desktop2.png)
 
 
 An API get request is made using [Axios](https://github.com/axios/axios) to return 24 GIFs that match the search query provided by the user.
@@ -70,11 +70,11 @@ Tutorials, articles and docs used while building this app.
 
 
 ##### Tablet
-![tablet view](./screenshots/tablet.png)
+![tablet view](./screenshots/tablet2.png)
 
 
 ##### Desktop
-![desktop view](./screenshots/gifs_selected.png)
+![desktop view](./screenshots/desktop2.png)
 
 
 ### Future Features
